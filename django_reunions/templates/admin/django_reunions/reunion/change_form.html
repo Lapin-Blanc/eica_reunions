@@ -1,0 +1,12 @@
+{% extends "admin/change_form.html" %}
+{% load admin_urls %}
+
+{% block submit_buttons_bottom %}
+{% if original.pk %}
+<button type="button"
+    onclick="window.open('{% url opts|admin_urlname:'change' original.pk|admin_urlquote %}print/', '_blank');"
+    name="_print" class="btn">Imprimer le PV
+</button>
+{% endif %}
+{{ block.super }}
+{% endblock %}
