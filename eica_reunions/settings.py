@@ -1,3 +1,4 @@
+# -*- encoding: utf-8 -*-
 """
 Django settings for eica_reunions project.
 
@@ -42,7 +43,7 @@ INSTALLED_APPS = [
     'django_reunions',
 ]
 
-MIDDLEWARE = [
+MIDDLEWARE_CLASSES = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
